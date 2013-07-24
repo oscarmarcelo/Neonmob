@@ -1,4 +1,6 @@
-var bkmklt, zoomSet = 'init', itemGrid, css, head, style;
+if(zoomSet == undefined) {
+	var bkmklt, zoomSet = 'init', itemGrid, css, head, style;
+}
 
 bkmklt = 'start';
 
@@ -36,6 +38,7 @@ if(bkmklt == 'start' && zoomSet == '0') {
 	bkmklt = 'end';
 
 }
+
 if(bkmklt == 'start' && zoomSet == '1') {
 
 	itemGrid.addClass("om-zoomout2").removeClass("om-zoomout");
