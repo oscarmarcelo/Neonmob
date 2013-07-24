@@ -1,4 +1,6 @@
-var bkmklt = 'start', zoomSet = 'init', itemGrid, css, head, style;
+var bkmklt, zoomSet = 'init', itemGrid, css, head, style;
+
+bkmklt = 'start';
 
 itemGrid = $("div.collection ul.item-grid");
 
