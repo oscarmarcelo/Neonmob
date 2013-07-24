@@ -1,4 +1,4 @@
-var zoomSet = 'init', itemGrid, css, head, style;
+var bkmklt = 'start', zoomSet = 'init', itemGrid, css, head, style;
 
 itemGrid = $("div.collection ul.item-grid");
 
@@ -23,24 +23,28 @@ if (zoomSet == 'init') {
 
 	itemGrid.addClass("om-zoomout");
 	zoomSet = '1';
+	bkmklt = 'end';
 
 }
 
-if(zoomSet == '0') {
+if(bkmklt == 'start' && zoomSet == '0') {
 
 	itemGrid.addClass("om-zoomout");
 	zoomSet = '1';
+	bkmklt = 'end';
 
 }
-if(zoomSet == '1') {
+if(bkmklt == 'start' && zoomSet == '1') {
 
 	itemGrid.addClass("om-zoomout2").removeClass("om-zoomout");
 	zoomSet = '2';
+	bkmklt = 'end';
 
 }
-if(zoomSet == '2') {
+if(bkmklt == 'start' && zoomSet == '2') {
 
 	itemGrid.removeClass("om-zoomout");
 	zoomSet = '0';
+	bkmklt = 'end';
 
 }
