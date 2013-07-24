@@ -21,6 +21,9 @@ if (zoomSet == 'init') {
 
 	head.appendChild(style);
 
+	itemGrid.addClass("om-zoomout");
+	zoomSet = '1';
+
 }
 
 if(zoomSet == '0') {
