@@ -2,7 +2,7 @@ var itemGrid, css, head, style;
 
 itemGrid = $("div.collection ul.item-grid");
 
-itemGrid.className = 'item-grid om-zoomout';
+itemGrid.addClass("om-zoomout");
 
 css = 'om-zoomout .piece.one-quarter .img, om-zoomout .piece.one-quarter img { width: 100px; height: auto; }';
 css += '.om-zoomout .piece.empty .img { height: 96px; -webkit-background-size: 50% 50%; -moz-background-size: 50% 50%; -o-background-size: 50% 50%; background-size: 50% 50%; }';
