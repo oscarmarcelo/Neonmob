@@ -1,10 +1,10 @@
-var zoomSet, itemGrid, css, head, style;
+var zoomSet = 'init', itemGrid, css, head, style;
 
 itemGrid = $("div.collection ul.item-grid");
 
-if (zoomSet == undefined) {
+if (zoomSet == 'init') {
 
-  css = '.om-zoomout .piece.one-quarter .img, .om-zoomout .piece.one-quarter img, .om-zoomout .piece.one-quarter span.title { width: 100px; height: auto; }';
+	css = '.om-zoomout .piece.one-quarter .img, .om-zoomout .piece.one-quarter img, .om-zoomout .piece.one-quarter span.title { width: 100px; height: auto; }';
 	css += '.om-zoomout .piece.empty .img { height: 100px !important; -webkit-background-size: 40px 40px; -moz-background-size: 40px 40px; -o-background-size: 40px 40px; background-size: 40px 40px; }';
 	css = '.om-zoomout2 .piece.one-quarter .img, .om-zoomout2 .piece.one-quarter img, .om-zoomout2 .piece.one-quarter span.title { width: 60px; height: auto; }';
 	css += '.om-zoomout2 .piece.empty .img { height: 60px !important; -webkit-background-size: 20px 20px; -moz-background-size: 20px 20px; -o-background-size: 20px 20px; background-size: 20px 20px; }';
