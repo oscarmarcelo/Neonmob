@@ -23,19 +23,21 @@ if (zoomSet == 'init') {
 
 }
 
+if(zoomSet == '0') {
+
+	itemGrid.addClass("om-zoomout");
+	zoomSet = '1';
+
+}
 if(zoomSet == '1') {
 
 	itemGrid.addClass("om-zoomout2").removeClass("om-zoomout");
 	zoomSet = '2';
 
-} else if(zoomSet == '2') {
+}
+if(zoomSet == '2') {
 
 	itemGrid.removeClass("om-zoomout");
 	zoomSet = '0';
-
-} else {
-
-	itemGrid.addClass("om-zoomout");
-	zoomSet = '1';
 
 }
