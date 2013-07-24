@@ -2,7 +2,7 @@ var zoomSet, itemGrid, css, head, style;
 
 itemGrid = $("div.collection ul.item-grid");
 
-if (zoomSet != undefined) {
+if (zoomSet == undefined) {
 
   css = '.om-zoomout .piece.one-quarter .img, .om-zoomout .piece.one-quarter img, .om-zoomout .piece.one-quarter span.title { width: 100px; height: auto; }';
 	css += '.om-zoomout .piece.empty .img { height: 100px !important; -webkit-background-size: 40px 40px; -moz-background-size: 40px 40px; -o-background-size: 40px 40px; background-size: 40px 40px; }';
