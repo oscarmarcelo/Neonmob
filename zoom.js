@@ -48,7 +48,7 @@ if(bkmklt == 'start' && zoomSet == '1') {
 }
 if(bkmklt == 'start' && zoomSet == '2') {
 
-	itemGrid.removeClass("om-zoomout");
+	itemGrid.removeClass("om-zoomout2");
 	zoomSet = '0';
 	bkmklt = 'end';
 
