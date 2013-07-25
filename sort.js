@@ -1,4 +1,4 @@
-var common = [], uncommon = [], rare = [], veryRare = [], extremelyRare = [], chase = [], variant = [], itemGrid, items;
+var common = [], uncommon = [], rare = [], veryRare = [], extremelyRare = [], variant = [], chase = [], itemGrid, items;
 
 itemGrid = $("div.collection ul.item-grid");
 items = itemGrid.children();
@@ -32,11 +32,11 @@ items.each(function(i,e){
     case "extremelyRare":
       extremelyRare.push(e);
       break;
-    case "chase":
-      chase.push(e);
-      break;
     case "variant":
       variant.push(e);
+      break;
+    case "chase":
+      chase.push(e);
       break;
 
   }
@@ -67,10 +67,10 @@ extremelyRare.forEach(function(e,i,a){
   prependEl(e);
 });
 
-chase.forEach(function(e,i,a){
+variant.forEach(function(e,i,a){
   prependEl(e);
 });
 
-variant.forEach(function(e,i,a){
+chase.forEach(function(e,i,a){
   prependEl(e);
 });
