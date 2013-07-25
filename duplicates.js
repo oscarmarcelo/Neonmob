@@ -21,6 +21,7 @@ if (duplicateSet == 'init') {
 	});
 
 	css = '.om-duplicates li.non-duplicate { opacity: 0.2; -webkit-transition-duration: 0.3s; -moz-transition-duration: 0.3s; -ms-transition-duration: 0.3s; -o-transition-duration: 0.3s; transition-duration: 0.3s; }';
+	css += '.om-duplicates li.non-duplicate:hover { opacity: 1; }';
 	css += '.om-duplicates2 li.non-duplicate { display: none; }';
 
 	head = document.getElementsByTagName('head')[0];
