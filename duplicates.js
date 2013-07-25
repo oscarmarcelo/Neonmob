@@ -1,5 +1,5 @@
 if(duplicateSet == undefined) {
-  var bkmDupl, duplicateSet = 'init', itemGrid, items, css, head, style;
+	var bkmDupl, duplicateSet = 'init', itemGrid, items, css, head, style;
 }
 
 bkmDupl = 'start';
@@ -7,6 +7,18 @@ bkmDupl = 'start';
 itemGrid = $("div.collection ul.item-grid");
 
 if (duplicateSet == 'init') {
+
+	items = itemGrid.children();
+
+	items.each(function(){
+
+		if($(this).find(".piece").hasClass("multiple")) {
+			$(this).addClass("duplicate");
+		} else {
+			$(this).addClass("non-duplicate");
+		}
+
+	});
 
 	css = '.om-duplicates li.non-duplicate { opacity: 0.2 }';
 	css += '.om-duplicates2 li.non-duplicate { display: none; }';
